@@ -25,3 +25,7 @@ let arr5 = arr1.shift();
 // Task 6- use unsift method to add element in the array and log the updated array.
 let arr6 = arr1.unshift(1);
 console.log(arr1);
+
+// Task 7- use map method where each number s doubled and log the array.
+let arr7 = arr1.unshift(1);
+console.log(arr1);
