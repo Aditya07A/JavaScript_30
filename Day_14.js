@@ -169,3 +169,33 @@ class PersonLatest3 {
 const person3 = new PersonLatest3("Aman", "Roy", 23);
 
 console.log(person3.fullName);
+// Task 8: Add a setter method to the Person class to update the name properties (firstName and lastName). Update the name using the setter and log the updated full name.
+class PersonLatest4 {
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  // Getter method to return the full name
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  // Setter method to update the name
+  set fullName(name) {
+    const [firstName, lastName] = name.split(" ");
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
+
+// Create an instance of the Person class
+const person4 = new PersonLatest4("Aman", "Roy", 25);
+
+// Log the initial full name
+console.log(person4.fullName); // Output: Aman Roy
+
+// Update the name using the setter
+person4.fullName = "John Doe";
+
+// Log the updated full name
+console.log(person4.fullName); // John Doe
